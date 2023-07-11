@@ -90,7 +90,10 @@ to_lang = dic[dic.index(to_lang)+1]
 
 # invoking Translator
 translator = Translator()
-
+# Translating from src to dest
+text_to_translate = translator.translate(query, dest=to_lang)
+  
+text = text_to_translate.text
 # Using Google-Text-to-Speech ie, gTTS() method
 # to speak the translated text into the
 # destination language which is stored in to_lang.
